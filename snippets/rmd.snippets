@@ -187,7 +187,11 @@ snippet #---
 # >>>>
 
 snippet r
-	\`\`\`{r ${1:chung_tag}, echo = FALSE ${2:options}}
+	\`\`\`{r ${1:chunk_tag}}
+	${3:}
+	\`\`\`
+snippet ro
+	\`\`\`{r ${1:chunk_tag}, ${2:options}}
 	${3:}
 	\`\`\`
 snippet ri
