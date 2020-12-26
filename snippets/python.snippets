@@ -460,3 +460,15 @@ snippet numeric "methods for emulating a numeric type" b
 	def __coerce__(self, other):
 		${25:pass}
 
+# data analysis tools
+snippet mnp
+	import matplotlib.pyplot as plt
+	import numpy as np
+	import pandas as pd
+	import pickle as pkl
+
+snippet op
+	open(f'${1:file}', '${2:rb}')${0}
+
+snippet load
+	pkl.load(open(f'${1:file}', 'rb'))${0}
